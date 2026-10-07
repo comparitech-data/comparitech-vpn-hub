@@ -271,3 +271,7 @@ with an occasional `blocked` row here.
    provider), not an assumption that everything is current. The **Snapshot** at
    the end of this download (or the file pack's `manifest.json`) stamps the export
    time and the Speed reference band/quarter in effect.
+
+## Independence and ownership
+
+Comparitech is owned by Point Wild. Point Wild also owns several VPN products. We do not score, rank or list those products on the VPN Intelligence Platform, because no disclosure makes a ranking of a parent-owned product read as independent, and they are not included in these files. Earlier versions of these files remain in this repository's history. See https://vpn.comparitech.com/methodology#independence-and-ownership

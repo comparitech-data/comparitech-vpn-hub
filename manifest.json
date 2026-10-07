@@ -3,10 +3,10 @@
   "schema_version": "a979f578c07f",
   "curve_quarter": "2026-04-01",
   "speed_reference_band": "5.0-8.5",
-  "providers_total": 74,
-  "telemetry_rows": 74,
-  "feature_rows": 5863,
-  "streaming_rows": 70,
+  "providers_total": 69,
+  "telemetry_rows": 69,
+  "feature_rows": 5412,
+  "streaming_rows": 60,
   "feature_data_source_distribution": {
     "calculated": 1084,
     "manual_admin": 855,
@@ -20,5 +20,10 @@
     "Comparitech_Streaming_Scorecard.csv",
     "logging_policies.json",
     "EVIDENCE_PACK_DATA_DICTIONARY.md"
-  ]
+  ],
+  "withheld_from_publication": {
+    "reason": "parent_company_ownership",
+    "since": "2026-10-06",
+    "note": "Providers owned by Comparitech's parent company, Point Wild, are not scored or ranked on the VPN Intelligence Platform. Their rows have been removed from this file, and the ranks of the remaining providers are recomputed without them. See https://vpn.comparitech.com/methodology#independence-and-ownership"
+  }
 }

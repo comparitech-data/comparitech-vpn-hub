@@ -19,8 +19,8 @@
   "hub_url": "https://www.comparitech.com/vpn",
   "license": "CC-BY-4.0",
   "price_basis": "intro_monthly_equivalent",
-  "providers_scored_total": 8,
-  "providers_shown": 7,
+  "providers_scored_total": 6,
+  "providers_shown": 6,
   "dimensions": [
     {
       "field": "stream_netflix_us_unblock_rate",
@@ -62,16 +62,9 @@
       "proton",
       "nordvpn",
       "cyberghost",
-      "totalvpn",
       "ipvanish"
     ],
-    "excluded": [
-      {
-        "provider_slug": "hotspot_shield",
-        "reason": "incomplete data for this use case: stream_netflix_us_unblock_rate, speed_us_retention_pct, stream_netflix_uk_unblock_rate, latency_us_p50_ms",
-        "type": "auto_incomplete_data"
-      }
-    ]
+    "excluded": []
   },
   "providers": [
     {
@@ -315,54 +308,6 @@
       "rank": 5
     },
     {
-      "provider_slug": "totalvpn",
-      "display_name": "Total VPN",
-      "composite_score": 7.88,
-      "included_in_chart": true,
-      "exclusion_reason": null,
-      "exclusion_type": null,
-      "overall_score": 6.07,
-      "sample_count": 60,
-      "dimensions": {
-        "stream_netflix_us_unblock_rate": {
-          "raw": 100,
-          "display": "100",
-          "points": 2.14,
-          "sample_count": 6,
-          "state": "scored"
-        },
-        "speed_us_retention_pct": {
-          "raw": 81.22155857998081,
-          "display": "81.22",
-          "points": 2.4077192826106297,
-          "sample_count": 91,
-          "state": "scored"
-        },
-        "stream_netflix_uk_unblock_rate": {
-          "raw": 100,
-          "display": "100",
-          "points": 1.43,
-          "sample_count": 6,
-          "state": "scored"
-        },
-        "latency_us_p50_ms": {
-          "raw": 64.5425,
-          "display": "64.54",
-          "points": 1.1830211249999998,
-          "sample_count": 135,
-          "state": "scored"
-        },
-        "effective_monthly_price_usd": {
-          "raw": 8.25,
-          "display": "8.25",
-          "points": 0.72215,
-          "sample_count": null,
-          "state": "scored"
-        }
-      },
-      "rank": 6
-    },
-    {
       "provider_slug": "ipvanish",
       "display_name": "IPVanish",
       "composite_score": 7.86,
@@ -408,60 +353,17 @@
           "state": "scored"
         }
       },
-      "rank": 7
-    },
-    {
-      "provider_slug": "hotspot_shield",
-      "display_name": "Hotspot Shield",
-      "composite_score": 0.74,
-      "included_in_chart": false,
-      "exclusion_reason": "incomplete data for this use case: stream_netflix_us_unblock_rate, speed_us_retention_pct, stream_netflix_uk_unblock_rate, latency_us_p50_ms",
-      "exclusion_type": "auto_incomplete_data",
-      "overall_score": 3.82,
-      "sample_count": null,
-      "dimensions": {
-        "stream_netflix_us_unblock_rate": {
-          "raw": null,
-          "display": "",
-          "points": 0.0,
-          "sample_count": null,
-          "state": "missing_data"
-        },
-        "speed_us_retention_pct": {
-          "raw": null,
-          "display": "",
-          "points": 0.0,
-          "sample_count": null,
-          "state": "missing_data"
-        },
-        "stream_netflix_uk_unblock_rate": {
-          "raw": null,
-          "display": "",
-          "points": 0.0,
-          "sample_count": null,
-          "state": "missing_data"
-        },
-        "latency_us_p50_ms": {
-          "raw": null,
-          "display": "",
-          "points": 0.0,
-          "sample_count": null,
-          "state": "missing_data"
-        },
-        "effective_monthly_price_usd": {
-          "raw": 7.99,
-          "display": "7.99",
-          "points": 0.744458,
-          "sample_count": null,
-          "state": "scored"
-        }
-      },
-      "rank": null
+      "rank": 6
     }
   ],
   "files": {
     "scorecard_csv": "https://raw.githubusercontent.com/comparitech-data/comparitech-vpn-hub/main/use-cases/best-vpn-netflix_scorecard.csv",
     "scorecard_json": "https://raw.githubusercontent.com/comparitech-data/comparitech-vpn-hub/main/use-cases/best-vpn-netflix_scorecard.json",
     "streaming_scorecard_csv": "https://raw.githubusercontent.com/comparitech-data/comparitech-vpn-hub/main/Comparitech_Streaming_Scorecard.csv"
+  },
+  "withheld_from_publication": {
+    "reason": "parent_company_ownership",
+    "providers_removed": 2,
+    "note": "Providers owned by Comparitech's parent company, Point Wild, are not scored or ranked on the VPN Intelligence Platform. Their rows have been removed from this file, and the ranks of the remaining providers are recomputed without them. See https://vpn.comparitech.com/methodology#independence-and-ownership"
   }
 }
